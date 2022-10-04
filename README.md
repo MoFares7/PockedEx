@@ -1,9 +1,9 @@
-Sudoku Solver
+PockedEx Solver
 ==============
 
-Forrest Knight
+Mo Fares
 
-CS 480 - Artificial Intelligence - Fall 2017
+CS 480 - Artificial Intelligence - Fall 2022
 
 *Python Version 3.0+*
 
@@ -12,7 +12,7 @@ Naive Backtracking Algorithm
 
 Run Command:
 
-	python sudoku.py <input file name>
+	python Pocked.py <input file name>
 
 
 Smart Backtracking Algorithm (MRV)
@@ -20,4 +20,4 @@ Smart Backtracking Algorithm (MRV)
 
 Run Command:
 
-	python sudoku_MRV.py <input file name>
+	python Pocked_MRV.py <input file name>

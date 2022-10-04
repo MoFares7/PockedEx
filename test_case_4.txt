@@ -1,4 +1,4 @@
-Sudoku 03 medium
+Pocked 03 medium
 003700080
 000008250
 085010300

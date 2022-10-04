@@ -1,4 +1,4 @@
-Sudoku 04 Hard
+Pocked 04 Hard
 024000000
 805060000
 300000159
