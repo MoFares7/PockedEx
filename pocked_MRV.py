@@ -19,7 +19,7 @@ def read_file(textfile):
 			break
 	return matrix
 
-def check_soduku(row,column,number,matrix_board):
+def check_pocked(row,column,number,matrix_board):
 	check=0
 	for i in range(0,9):
 		if matrix_board[row][i]==number:
@@ -42,7 +42,7 @@ class calls:
 	number_of_calls=0
 c=calls()
 
-def sudoku_solver(matrix):
+def pocked_solver(matrix):
 	c.number_of_calls=c.number_of_calls+1
 	break_condition=0
 	checking_range=[]
@@ -77,12 +77,12 @@ def sudoku_solver(matrix):
 	column=minimum_range_selection[1]
 
 	for i in range(0,10):
-		if check_soduku(row,column,i,matrix):
+		if check_pocked(row,column,i,matrix):
 			matrix[row][column]=i
-			if sudoku_solver(matrix):
+			if pocked_solver(matrix):
 				return True
 			matrix[row][column]=0
 	return False
 
 matrix=read_file(sys.argv[1])
-sudoku_solver(matrix)
+pocked_solver(matrix)

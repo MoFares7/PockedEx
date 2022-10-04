@@ -66,15 +66,15 @@ def pocked_solver(matrix):
 
 	#print("hello")
 	for i in range(0,10):
-		if check_soduku(row,column,i,matrix):
+		if check_pocked(row,column,i,matrix):
 			matrix[row][column]=i
-			if sudoku_solver(matrix):
+			if pocked_solver(matrix):
 				return True
 			matrix[row][column]=0
 	return False
 
 matrix=read_file(sys.argv[1])
-sudoku_solver(matrix)
+pocked_solver(matrix)
 
 #print("'''''''''''''''''''''''''''''''''''''''''''''''''''''''matrix'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''")
 #print(matrix)
