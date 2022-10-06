@@ -72,7 +72,8 @@ def pocked_solver(matrix):
 				return True
 			matrix[row][column]=0
 	return False
-
+else
+return null;
 matrix=read_file(sys.argv[1])
 pocked_solver(matrix)
 
